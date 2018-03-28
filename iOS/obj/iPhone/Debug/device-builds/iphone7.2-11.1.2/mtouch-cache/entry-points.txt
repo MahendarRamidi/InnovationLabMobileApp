@@ -1,0 +1,27 @@
+Function=xamarin_timezone_get_data
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/mscorlib.dll
+Function=CreateZStream
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/System.dll
+Function=UIApplicationMain
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/innovationlab/Documents/InnovationLabMobileApp/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.1.2/mtouch-cache/Link/Xamarin.iOS.dll
+Function=mono_pmip

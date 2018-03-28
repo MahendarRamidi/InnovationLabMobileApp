@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:el="clr-namespace:InnovationLabMobileApp.Renderers;assembly=InnovationLabMobileApp"
+    x:Class="InnovationLabMobileApp.Views.InnovateTodayConferencePage">
+	 <Grid HorizontalOptions="FillAndExpand" RowSpacing="0" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="2.2*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" BackgroundColor="#301631">
+            <Image x:Name="img" Margin="15,10,10,0" Source="Menubar.png" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <StackLayout Grid.Row="1" BackgroundColor="#FFE8C9">
+            <Label Margin="25,25,10,0" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize="18" VerticalOptions="Start" Text="Innovate Today Conference" TextColor="#940B28">
+            </Label>
+            <el:AboutFDALabel x:Name="lbl" LineSpacing="4" Margin="25,8,15,15" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="#504f50" HorizontalTextAlignment="Start" FontSize="15" FontFamily="Arial">
+            </el:AboutFDALabel>
+        </StackLayout>
+        <Grid Grid.Row="2" BackgroundColor="#301631">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="Back.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Back_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Source="Home.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Home_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Source="Scann.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Scan_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </Grid>
+</ContentPage>

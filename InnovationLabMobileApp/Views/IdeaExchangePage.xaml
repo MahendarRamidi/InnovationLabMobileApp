@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="InnovationLabMobileApp.Views.IdeaExchangePage" 
+    xmlns:el="clr-namespace:InnovationLabMobileApp.Renderers;assembly=InnovationLabMobileApp" 
+    BackgroundColor="Transparent"
+    BackgroundImage="EventRegBgd.png">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" HeightRequest="50" BackgroundColor="#301631">
+            <Image Margin="15,10,10,0" x:Name="img" Source="Menubar.png" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <ScrollView Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid HorizontalOptions="FillAndExpand" RowSpacing="10" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" BackgroundColor="#ffebca" OutlineColor="#5e1201" Opacity="0.8">
+                        <el:LoginEntry x:Name="Subjectentry" Margin="10,0,0,0" Opacity="0.8" BackgroundColor="#ffebca" TextColor="Black" Placeholder="Subject" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="Descriptionentry" Margin="10,0,0,0" Opacity="0.8" BackgroundColor="#ffebca" TextColor="Black" Placeholder="Description" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="Sponsorentry" Margin="10,0,0,0" Opacity="0.8" BackgroundColor="#ffebca" TextColor="Black" Placeholder="Sponsor" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                       <!-- <Picker x:Name="Sponcerpicker" Margin="10,0,0,0" Title="Sponsor" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />-->
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="BusinessUnitpicker" Margin="10,0,0,0" Opacity="0.8" Title="Business Unit" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="Impactpicker" Margin="10,0,0,0" Opacity="0.8" Title="Impact" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="Technologypicker" Margin="10,0,0,0" Opacity="0.8" Title="Technology Area" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="SubTecnnologypicker" Margin="10,0,0,0" Opacity="0.8" Title="Sub Technology Area" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="IdeaTagspicker" Margin="10,0,0,0" Opacity="0.8" Title="Idea Tags" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="8" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="ProjectStatuspicker" Margin="10,0,0,0" Opacity="0.8" Title="Project Status" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="9" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" BackgroundColor="#ffebca" OutlineColor="#5e1201" Opacity="0.8">
+                        <el:LoginEntry x:Name="IdeaOriginatorpicker" Margin="10,0,0,0" Opacity="0.8" BackgroundColor="#ffebca" TextColor="Black" Placeholder="Idea Originator" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <Grid Grid.Row="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <el:MyFrame Grid.Column="0" Padding="0" Margin="25,0,25,0" BackgroundColor="#ffe1a6">
+                        <el:LoginButton Text="Idea Submit" TextColor="#993219" BorderRadius="0" BackgroundColor="#ffe1a6" Clicked="Submit_Clicked" />
+                    </el:MyFrame>
+                    <el:MyFrame Grid.Column="1" Padding="0" Margin="25,0,25,0" BackgroundColor="#ffe1a6">
+                        <el:LoginButton Text="Cancel" TextColor="#993219" BorderRadius="0" BackgroundColor="#ffe1a6" Clicked="Cancel_Clicked" />
+                    </el:MyFrame>
+                </Grid>
+            </Grid>
+        </ScrollView>
+        <Grid Grid.Row="2" HeightRequest="50" BackgroundColor="#301631">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="Back.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Back_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Source="Home.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Home_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Source="Scann.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Scan_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </Grid>
+</ContentPage>

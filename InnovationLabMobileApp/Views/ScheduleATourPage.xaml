@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:el="clr-namespace:InnovationLabMobileApp.Renderers;assembly=InnovationLabMobileApp"
+    BackgroundColor="Transparent"
+    x:Class="InnovationLabMobileApp.Views.ScheduleATourPage" BackgroundImage="EventRegBgd.png">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.25*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="1.25*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" Spacing="0" Orientation="Horizontal" BackgroundColor="#301631">
+            <Image x:Name="img" Margin="15,10,10,0" Source="Menubar.png" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+            <Label Margin="0,10,0,0" Text="Schedule Appointment" TextColor="White" FontSize="16" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <Grid HorizontalOptions="FillAndExpand" RowSpacing="10" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.6*" />
+                    <RowDefinition Height="0.3*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Padding="25,0,25,0">
+                    <el:AboutFDALabel Text="Please fill out the request form below. We do our best to accommodate the tour date requested, but cannot guarantee availability." FontSize="15" TextColor="#504f50" LineSpacing="3" FontFamily="Arial" HorizontalOptions="StartAndExpand">
+                    </el:AboutFDALabel>
+                    <!--            <Label Text="We do our best to accommodate the tour date" FontSize="12" TextColor="Black" HorizontalOptions="StartAndExpand" />
+            <Label Text="requested, but cannot guarantee availability." FontSize="12" TextColor="Black" HorizontalOptions="StartAndExpand" />-->
+                </StackLayout>
+                <StackLayout Grid.Row="1" Padding="25,0,25,0">
+                    <Label Text="Schedule your tour today!" TextColor="#504f50" FontSize="16" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" BackgroundColor="#ffebca" Opacity="0.8" OutlineColor="#7b3323">
+                        <el:LoginEntry x:Name="DateEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" TextColor="Black" Opacity="0.8" Placeholder="Date" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" Opacity="0.8" CornerRadius="0" BackgroundColor="#ffebca" OutlineColor="#7b3323">
+                        <el:LoginEntry x:Name="YourNameEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="Your Name" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" Opacity="0.8" CornerRadius="0" OutlineColor="#7b3323" BackgroundColor="#ffebca">
+                        <!-- <el:LoginEntry x:Name="CenterEntry" BackgroundColor="#ffebca"  Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="Tap to Select Your Center" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />-->
+                        <el:MyPicker x:Name="CenterPicker" Title="Tap to Select Your Center" Margin="10,0,0,0" BackgroundColor="#ffebca" Opacity="0.8" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" Opacity="0.8" CornerRadius="0" OutlineColor="#7b3323" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="EmailEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="Email" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" Opacity="0.8" CornerRadius="0" OutlineColor="#7b3323" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="PhoneNumberEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="Phone No." PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" Opacity="0.8" CornerRadius="0" OutlineColor="#7b3323" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="NumberodPeopleEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="Number of People" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <el:MyFrame Grid.Row="8" Padding="0" Margin="25,0,25,0" BackgroundColor="#ffe1a6">
+                    <el:LoginButton Text="Schedule Appointment" TextColor="#993219" BackgroundColor="#ffe1a6" BorderRadius="0" Clicked="Schedule_Clicked" />
+                </el:MyFrame>
+            </Grid>
+        </ScrollView>
+        <Grid Grid.Row="2" BackgroundColor="#301631">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="Back.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Back_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Source="Home.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Home_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Source="Scann.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Scan_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </Grid>
+</ContentPage>

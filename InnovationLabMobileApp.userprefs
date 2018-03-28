@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{8CB26642-B9A4-4E3C-871E-467A4A23DFF8}|Default">
+  <MonoDevelop.Ide.ItemProperties.InnovationLabMobileApp.Droid PreferredExecutionTarget="Android.950a723a" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="InnovationLabMobileApp/Views/EventRegistrationPage.xaml" Line="111" Column="15" />
+      <File FileName="InnovationLabMobileApp/Views/LabRegistrationPage.xaml" Line="69" Column="15" />
+      <File FileName="InnovationLabMobileApp/Views/IdeaExchangePage.xaml" Line="122" Column="15" />
+      <File FileName="InnovationLabMobileApp/Views/ScheduleATourPage.xaml" Line="97" Column="15" />
+      <File FileName="InnovationLabMobileApp/obj/Debug/InnovationLabMobileApp.Views.LabRegistrationPage.xaml.g.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/innovationlab/Documents/InnovationLabMobileApp/InnovationLabMobileApp/Views/LabRegistrationPage.xaml.cs" relfile="InnovationLabMobileApp/Views/LabRegistrationPage.xaml.cs" line="101" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.InnovationLabMobileApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.613FC509-0719-4430-A475-D58E6E221EE2" automaticSigning="False">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.InnovationLabMobileApp.iOS>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="InnovationLabMobileApp/WebServices/CloudDataStore.cs" line="89" offsetX="815" offsetY="1386" expression="json" liveUpdate="True" />
+    <Watch file="InnovationLabMobileApp/Views/PrototypesPage.xaml.cs" line="39" offsetX="495" offsetY="570" expression="response" liveUpdate="False" />
+    <Watch file="InnovationLabMobileApp/WebServices/CloudDataStore.cs" line="36" offsetX="723" offsetY="401" expression="json" liveUpdate="False" />
+    <Watch file="InnovationLabMobileApp/WebServices/CloudDataStore.cs" line="88" offsetX="681" offsetY="1348" expression="json" liveUpdate="False" />
+    <Watch file="InnovationLabMobileApp/WebServices/CloudDataStore.cs" line="90" offsetX="674" offsetY="1332" expression="json" liveUpdate="False" />
+    <Watch file="InnovationLabMobileApp/Views/PrototypesPage.xaml.cs" line="45" offsetX="293" offsetY="660" expression="ex" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+</Properties>

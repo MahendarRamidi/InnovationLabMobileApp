@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{10315B8D-261C-4A1D-9D89-68C15CE2F698}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>InnovationLabMobileApp.iOS</RootNamespace>
+    <AssemblyName>InnovationLabMobileApp.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Mahendar Ramidi (8Y5ZY4436E)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>12373</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Mahendar Ramidi (8Y5ZY4436E)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements></CodesignEntitlements>
+    <IOSDebuggerPort>43644</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>iOS Team Provisioning Profile: com.innovationlab.reddy</CodesignProvision>
+    <CodesignResourceRules></CodesignResourceRules>
+    <CodesignExtraArgs></CodesignExtraArgs>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Core">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.portable">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.3.2\lib\Xamarin.iOS10\zxing.portable.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXingNetMobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.3.2\lib\Xamarin.iOS10\ZXingNetMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Forms">
+      <HintPath>..\packages\ZXing.Net.Mobile.Forms.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Forms.iOS">
+      <HintPath>..\packages\ZXing.Net.Mobile.Forms.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Forms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="XamForms.Controls.Calendar">
+      <HintPath>..\packages\XamForms.Controls.Calendar.1.1.1\lib\Xamarin.iOS10\XamForms.Controls.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="XamForms.Controls.Calendar.iOS">
+      <HintPath>..\packages\XamForms.Controls.Calendar.1.1.1\lib\Xamarin.iOS10\XamForms.Controls.Calendar.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.280555\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.280555\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.280555\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.280555\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InnovationLabMobileApp\InnovationLabMobileApp.csproj">
+      <Project>{1FBD7921-E7A3-49AC-B4A7-E56845D04BA3}</Project>
+      <Name>InnovationLabMobileApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x-robot.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x-robot.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x-robot.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x-robot.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83%402x-robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Renderers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\LoginEntryRenderer.cs" />
+    <Compile Include="Renderers\LoginButtonRenderer.cs" />
+    <Compile Include="Renderers\MyViewCellRenderer.cs" />
+    <Compile Include="Renderers\AboutFDALabelRender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LoginBG%403x.jpg" />
+    <BundleResource Include="Resources\ColorBox1.png" />
+    <BundleResource Include="Resources\ColorBox2.png" />
+    <BundleResource Include="Resources\ColorBox3.png" />
+    <BundleResource Include="Resources\ColorBox4.png" />
+    <BundleResource Include="Resources\AboutFDALab%401x.png" />
+    <BundleResource Include="Resources\AboutFDALab%402x.png" />
+    <BundleResource Include="Resources\AboutFDALab%403x.png" />
+    <BundleResource Include="Resources\EventRegistration%401x.png" />
+    <BundleResource Include="Resources\EventRegistration%402x.png" />
+    <BundleResource Include="Resources\EventRegistration%403x.png" />
+    <BundleResource Include="Resources\LabRegistration%401x.png" />
+    <BundleResource Include="Resources\LabRegistration%402x.png" />
+    <BundleResource Include="Resources\LabRegistration%403x.png" />
+    <BundleResource Include="Resources\PreviousVisitors%401x.png" />
+    <BundleResource Include="Resources\PreviousVisitors%402x.png" />
+    <BundleResource Include="Resources\PreviousVisitors%403x.png" />
+    <BundleResource Include="Resources\EventRegBG%401x.jpg" />
+    <BundleResource Include="Resources\EventRegBG%402x.jpg" />
+    <BundleResource Include="Resources\EventRegBG%403x.jpg" />
+    <BundleResource Include="Resources\Home%401x.png" />
+    <BundleResource Include="Resources\Home%402x.png" />
+    <BundleResource Include="Resources\Home%403x.png" />
+    <BundleResource Include="Resources\Back%401x.png" />
+    <BundleResource Include="Resources\Back%402x.png" />
+    <BundleResource Include="Resources\Back%403x.png" />
+    <BundleResource Include="Resources\Scann%401x.png" />
+    <BundleResource Include="Resources\Scann%402x.png" />
+    <BundleResource Include="Resources\Scann%403x.png" />
+    <BundleResource Include="Resources\AbouttheLab%401x.png" />
+    <BundleResource Include="Resources\AbouttheLab%402x.png" />
+    <BundleResource Include="Resources\AbouttheLab%403x.png" />
+    <BundleResource Include="Resources\AskTheExpertIcon%401x.png" />
+    <BundleResource Include="Resources\AskTheExpertIcon%402x.png" />
+    <BundleResource Include="Resources\AskTheExpertIcon%403x.png" />
+    <BundleResource Include="Resources\IdeationandInnovation%401x.png" />
+    <BundleResource Include="Resources\IdeationandInnovation%402x.png" />
+    <BundleResource Include="Resources\IdeationandInnovation%403x.png" />
+    <BundleResource Include="Resources\InnovateToday%401x.png" />
+    <BundleResource Include="Resources\InnovateToday%402x.png" />
+    <BundleResource Include="Resources\InnovateToday%403x.png" />
+    <BundleResource Include="Resources\PrototypesIcon%401x.png" />
+    <BundleResource Include="Resources\PrototypesIcon%402x.png" />
+    <BundleResource Include="Resources\PrototypesIcon%403x.png" />
+    <BundleResource Include="Resources\TechnologySurveillanceIcon%401x.png" />
+    <BundleResource Include="Resources\TechnologySurveillanceIcon%402x.png" />
+    <BundleResource Include="Resources\TechnologySurveillanceIcon%403x.png" />
+    <BundleResource Include="Resources\WhitepapersIcon%401x.png" />
+    <BundleResource Include="Resources\WhitepapersIcon%402x.png" />
+    <BundleResource Include="Resources\WhitepapersIcon%403x.png" />
+    <BundleResource Include="Resources\Workshops%401x.png" />
+    <BundleResource Include="Resources\Workshops%402x.png" />
+    <BundleResource Include="Resources\Workshops%403x.png" />
+    <BundleResource Include="Resources\ActivitiesIcon%401x.png" />
+    <BundleResource Include="Resources\ActivitiesIcon%402x.png" />
+    <BundleResource Include="Resources\ActivitiesIcon%403x.png" />
+    <BundleResource Include="Resources\HoursofOperationIcon%401x.png" />
+    <BundleResource Include="Resources\HoursofOperationIcon%402x.png" />
+    <BundleResource Include="Resources\HoursofOperationIcon%403x.png" />
+    <BundleResource Include="Resources\OurWorkIcon%401x.png" />
+    <BundleResource Include="Resources\OurWorkIcon%402x.png" />
+    <BundleResource Include="Resources\OurWorkIcon%403x.png" />
+    <BundleResource Include="Resources\INNOVATEExperianceIcon%401x.png" />
+    <BundleResource Include="Resources\INNOVATEExperianceIcon%402x.png" />
+    <BundleResource Include="Resources\INNOVATEExperianceIcon%403x.png" />
+    <BundleResource Include="Resources\LoginBackG%401x.png" />
+    <BundleResource Include="Resources\LoginBackG%402x.png" />
+    <BundleResource Include="Resources\LoginBackG%403x.png" />
+    <BundleResource Include="Resources\Password%403x.png" />
+    <BundleResource Include="Resources\Password%401x.png" />
+    <BundleResource Include="Resources\Password%402x.png" />
+    <BundleResource Include="Resources\EmailIcon%401x.png" />
+    <BundleResource Include="Resources\EmailIcon%402x.png" />
+    <BundleResource Include="Resources\EmailIcon%403x.png" />
+    <BundleResource Include="Resources\TechTalkxIcon%401x.png" />
+    <BundleResource Include="Resources\TechTalkxIcon%402x.png" />
+    <BundleResource Include="Resources\TechTalkxIcon%403x.png" />
+    <BundleResource Include="Resources\Menubar%401x.png" />
+    <BundleResource Include="Resources\Menubar%402x.png" />
+    <BundleResource Include="Resources\Menubar%403x.png" />
+    <BundleResource Include="Resources\LandingImage%401x.png" />
+    <BundleResource Include="Resources\LandingImage%402x.png" />
+    <BundleResource Include="Resources\LandingImage%403x.png" />
+    <BundleResource Include="Resources\Logout%401x.png" />
+    <BundleResource Include="Resources\Logout%402x.png" />
+    <BundleResource Include="Resources\Logout%403x.png" />
+    <BundleResource Include="Resources\MenuAboutLab%401x.png" />
+    <BundleResource Include="Resources\MenuAboutLab%402x.png" />
+    <BundleResource Include="Resources\MenuAboutLab%403x.png" />
+    <BundleResource Include="Resources\MenuEvents%401x.png" />
+    <BundleResource Include="Resources\MenuEvents%403x.png" />
+    <BundleResource Include="Resources\MenuHome%401x.png" />
+    <BundleResource Include="Resources\MenuHome%402x.png" />
+    <BundleResource Include="Resources\MenuHome%403x.png" />
+    <BundleResource Include="Resources\MenuIdeaExchange%401x.png" />
+    <BundleResource Include="Resources\MenuIdeaExchange%402x.png" />
+    <BundleResource Include="Resources\MenuIdeaExchange%403x.png" />
+    <BundleResource Include="Resources\MenuLogout%401x.png" />
+    <BundleResource Include="Resources\MenuLogout%402x.png" />
+    <BundleResource Include="Resources\MenuLogout%403x.png" />
+    <BundleResource Include="Resources\MenuRegister%401x.png" />
+    <BundleResource Include="Resources\MenuRegister%402x.png" />
+    <BundleResource Include="Resources\MenuRegister%403x.png" />
+    <BundleResource Include="Resources\MenuSurvey%401x.png" />
+    <BundleResource Include="Resources\MenuSurvey%402x.png" />
+    <BundleResource Include="Resources\MenuSurvey%403x.png" />
+    <BundleResource Include="Resources\MenuTour%401x.png" />
+    <BundleResource Include="Resources\MenuTour%402x.png" />
+    <BundleResource Include="Resources\MenuTour%403x.png" />
+    <BundleResource Include="Resources\LAboutFDA%401x.png" />
+    <BundleResource Include="Resources\LAboutFDA%402x.png" />
+    <BundleResource Include="Resources\LAboutFDA%403x.png" />
+    <BundleResource Include="Resources\LLabReg%401x.png" />
+    <BundleResource Include="Resources\LLabReg%402x.png" />
+    <BundleResource Include="Resources\LLabReg%403x.png" />
+    <BundleResource Include="Resources\LEventReg%401x.png" />
+    <BundleResource Include="Resources\LEventReg%402x.png" />
+    <BundleResource Include="Resources\LEventReg%403x.png" />
+    <BundleResource Include="Resources\LPrevVisitors%401x.png" />
+    <BundleResource Include="Resources\LPrevVisitors%402x.png" />
+    <BundleResource Include="Resources\LPrevVisitors%403x.png" />
+    <BundleResource Include="Resources\MenuEvents%402x.png" />
+    <BundleResource Include="Resources\EventRegBgd%403x.png" />
+    <BundleResource Include="Resources\EventRegBgd%402x.png" />
+    <BundleResource Include="Resources\EventRegBgd%401x.png" />
+    <BundleResource Include="Resources\UnCheck" />
+    <BundleResource Include="Resources\Check" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
+</Project>

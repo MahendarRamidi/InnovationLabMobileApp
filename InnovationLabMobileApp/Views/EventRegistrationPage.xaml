@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="InnovationLabMobileApp.Views.EventRegistrationPage" 
+    BackgroundColor="Transparent"
+    xmlns:el="clr-namespace:InnovationLabMobileApp.Renderers;assembly=InnovationLabMobileApp" 
+    BackgroundImage="EventRegBgd.png">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.55*" />
+            <RowDefinition Height="12*" />
+            <RowDefinition Height="1.25*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" BackgroundColor="#301631">
+            <Image x:Name="img" Margin="15,10,10,0" Source="Menubar.png" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <Grid HorizontalOptions="FillAndExpand" RowSpacing="10" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.6*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" BackgroundColor="#ffebca" Opacity="0.8" HasShadow="false" OutlineColor="#7b3323">
+                        <el:LoginEntry x:Name="FirstNameEntry" BackgroundColor="#ffebca" Opacity="0.8" Margin="10,0,0,0" TextColor="Black" Placeholder="FirstName" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" OutlineColor="#5e1201" Opacity="0.8" HasShadow="false" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="LastNameEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="LastName" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" Opacity="0.8" OutlineColor="#5e1201" HasShadow="false" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="BusinessCenterpicker" Margin="10,0,0,0" Title="Business Center" BackgroundColor="#ffebca" Opacity="0.8" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" Opacity="0.8" BackgroundColor="#ffebca" HasShadow="false" OutlineColor="#7b3323">
+                        <el:LoginEntry x:Name="EmailEntry" BackgroundColor="#ffebca" Margin="10,0,0,0" Opacity="0.8" TextColor="Black" Placeholder="Email" Keyboard="Email" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" Opacity="0.8" OutlineColor="#7b3323" HasShadow="false" BackgroundColor="#ffebca">
+                        <el:LoginEntry x:Name="PhoneNumberEntry" BackgroundColor="#ffebca" Opacity="0.8" Margin="10,0,0,0" TextColor="Black" Placeholder="Phone Number" PlaceholderColor="#b19782" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" Opacity="0.8" OutlineColor="#7b3323" HasShadow="false" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="EventTypepicker" Title="Event Type" Margin="10,0,0,0" Opacity="0.8" BackgroundColor="#ffebca" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" Opacity="0.8" OutlineColor="#7b3323" HasShadow="false" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="EventNamepicker" Title="Event Name" Margin="10,0,0,0" BackgroundColor="#ffebca" Opacity="0.8" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Padding="25,0,25,0">
+                    <el:MyFrame Padding="0" Margin="0" VerticalOptions="FillAndExpand" CornerRadius="0" Opacity="0.8" OutlineColor="#7b3323" HasShadow="false" BackgroundColor="#ffebca">
+                        <el:MyPicker x:Name="EventDatepicker" Title="Event Date" Margin="10,0,0,0" BackgroundColor="#ffebca" Opacity="0.8" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    </el:MyFrame>
+                </StackLayout>
+                <Grid Grid.Row="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <el:MyFrame Grid.Column="0" Padding="0" Margin="25,0,25,0" BackgroundColor="#ffe1a6">
+                        <el:LoginButton Text="Register" TextColor="#993219" BorderRadius="0" BackgroundColor="#ffe1a6" Clicked="Handle_Clicked" />
+                    </el:MyFrame>
+                    <el:MyFrame Grid.Column="1" Padding="0" Margin="25,0,25,0" BackgroundColor="#ffe1a6">
+                        <el:LoginButton Text="Cancel" TextColor="#993219" BorderRadius="0" BackgroundColor="#ffe1a6" Clicked="Handle_Clicked" />
+                    </el:MyFrame>
+                </Grid>
+                <BoxView Grid.Row="9" BackgroundColor="Transparent" />
+            </Grid>
+        </ScrollView>
+        <Grid Grid.Row="2" BackgroundColor="#301631">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="Back.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Back_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Source="Home.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Home_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Source="Scann.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Scan_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </Grid>
+</ContentPage>
